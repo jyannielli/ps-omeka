@@ -1,6 +1,6 @@
-#Historicity
+#Historicity - a responsive theme for digital content management
 
-This Omeka theme was originally developed for the Center for Digital Humanities at Princeton University.
+This Omeka theme was originally developed for the Princeton & Slavery Project, with support from the Center for Digital Humanities at Princeton University.
 
 ##Appearance Configuration
 This theme is meant as a customizable base for building a unique design and allows site administrators greater control over the branding of their site via configuration settings.   
