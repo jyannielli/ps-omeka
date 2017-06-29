@@ -1,0 +1,183 @@
+/*
+ * Historicity is a mobile-first theme and therefore styles should be added in
+ * the corresponding *.scss file for the specific breakpoints as outlined below.
+ *
+ * _screen.scss = global
+ * _screen_sm.scss = @media screen and (min-width: 601px)
+ * _screen_md.scss = @media screen and (min-width: 767px)
+ * _screen_lg.scss = @media screen and (min-width: 801px)
+ * _screen_xl.scss = @media screen and (min-width: 1201px)
+ *
+ */
+
+/* Header */
+header {
+  .header__inner {
+    display: table;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    >div {
+      display: table-cell;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      -webkit-flex-grow: 1;
+      -moz-flex-flow: 1;
+      flex-grow: 1;
+      align-self: center;
+      &.search {
+        -webkit-flex-grow: 0;
+        -moz-flex-flow: 0;
+        flex-grow: 0;
+        text-align: right;
+      }
+    }
+  }
+}
+
+/* Navigation */
+#primary-nav {
+  background: rgba(255, 255, 255, .4);
+}
+.navigation.nav-menu {
+  list-style-type: none;
+  display: table;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 96%;
+
+  li {
+    display: table-cell;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    flex-grow: 1;
+    padding: 1em 0;
+    position: relative;
+
+    a {
+      text-decoration: none;
+    }
+
+    &.active,
+    &:hover {
+      >a {
+        color: $gray-darker;
+      }
+    }
+
+    &:hover >ul {
+      display: block;
+      margin-top: 2em;
+      border-bottom: 2px solid $brand-dark;
+    }
+
+    ul {
+      background: rgb(240, 236, 233);
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      z-index: 100;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      min-width: 145px;
+
+      li {
+        display: block;
+        padding: .3em .5em;
+        width: 100%;
+        font-size: .875em;
+
+        a {
+          padding: .5em 0;
+        }
+      }
+    }
+  }
+}
+
+#search-form {
+  position: relative;
+  z-index: 1;
+}
+
+/* Homepage */
+.home__text {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  padding-left: 1%;
+}
+
+.home__hero {
+  float: right;
+  max-width: 60%;
+  margin: 1%;
+}
+.home__featured,
+.home__exhibits,
+.home__recent {
+  img {
+    float: left;
+    max-width: 100px;
+    margin: 0 1em 1em 0
+  }
+
+  .record .image ~ p {
+    margin-left: 116px;
+  }
+}
+
+/* Browse */
+.items,
+.collections {
+  &.browse{
+    .card {
+      text-align: left;
+
+      img {
+        float: left;
+        max-width: 100px;
+        margin: 0 .5em .5em 0
+      }
+    }
+  }
+}
+
+/* Search */
+.search {
+  .card {
+    text-align: left;
+
+    img {
+      float: left;
+      max-width: 100px;
+      margin: 0 .5em .5em 0
+    }
+  }
+}
+
+/* Show Source */
+.item.show {
+  #wrap .container {
+    max-width: 900px;
+  }
+
+  .item-file {
+    float: right;
+    margin-left: 1%;
+    max-width: 33%;
+  }
+}

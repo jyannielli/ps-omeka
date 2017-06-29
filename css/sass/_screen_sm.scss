@@ -1,0 +1,102 @@
+/*
+ * Historicity is a mobile-first theme and therefore styles should be added in
+ * the corresponding *.scss file for the specific breakpoints as outlined below.
+ *
+ * _screen.scss = global
+ * _screen_sm.scss = @media screen and (min-width: 601px)
+ * _screen_md.scss = @media screen and (min-width: 767px)
+ * _screen_lg.scss = @media screen and (min-width: 801px)
+ * _screen_xl.scss = @media screen and (min-width: 1201px)
+ *
+ */
+
+/* Homepage */
+.home__text {
+  font-size: 1.1em;
+}
+
+/* Browse Items, Collections, and Exhibitions */
+.secondary-nav {
+  float: right;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      padding: 0 .5em;
+    }
+  }
+}
+.filter-label,
+.sort-label,
+.filter-button-group,
+.sort-by.button-group {
+  display: inline;
+}
+.sort-label {
+  margin-left: 1em;
+}
+.grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+.grid-item {
+  display: inline-block;
+  &.card {
+    width: 21%;
+  }
+  .item-description {
+    text-align: left;
+  }
+}
+
+/* Show Items */
+.item.show {
+  .element-set, .element {
+    h3 {
+      margin-bottom: .2em;
+    }
+  }
+
+  .citation {
+    margin-bottom: 2em;
+  }
+}
+
+/* Exhibits */
+.exhibit.grid-item.card {
+  width: 46%;
+}
+
+.exhibits .captions-center:not(.with-showcase) {
+  max-width: 250px;
+  margin-bottom: 1em;
+}
+
+.layout-gallery .gallery.with-showcase .exhibit-gallery-item {
+  width: 43%;
+}
+
+.exhibit-block {
+  clear: none;
+}
+
+.exhibit-credits {
+  font-size: .875em;
+}
+
+#exhibit-page-navigation {
+  padding: 1em 0;
+}
+
+/* Search */
+.search {
+  .exhibit.grid-item.card {
+    width: 21%;
+  }
+}

@@ -1,0 +1,76 @@
+/*
+ * Historicity is a mobile-first theme and therefore styles should be added in
+ * the corresponding *.scss file for the specific breakpoints as outlined below.
+ *
+ * _screen.scss = global
+ * _screen_sm.scss = @media screen and (min-width: 601px)
+ * _screen_md.scss = @media screen and (min-width: 767px)
+ * _screen_lg.scss = @media screen and (min-width: 801px)
+ * _screen_xl.scss = @media screen and (min-width: 1201px)
+ *
+ */
+
+#secondary {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-start;
+}
+
+.home__featured,
+.home__exhibits,
+.home__recent {
+  clear: both;
+  display: inline-block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-grow: 1;
+  -moz-flex-flow: 1;
+  flex-grow: 1;
+
+  >h2, >p {
+    margin: 0 .5em;
+    width: 100%;
+  }
+
+  >p {
+    clear: both;
+    text-align: right;
+  }
+
+  >div {
+    display: inline-block;
+    flex-basis: 29%;
+    flex-grow: 1;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+.home__exhibits >div {
+  float: left;
+  width: 40%;
+}
+
+.home_featured {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.home__exhibits {
+  max-width: 66%;
+}
+
+.home__recent {
+  max-width: 33%;
+}
